@@ -1,0 +1,75 @@
+\clearpage % clear the prior chapter's page
+
+\chapter{Supplement to "Rapid simulation of unprocessed DEER decay data for protein fold prediction"} \label{app:rosettadeer_supp}
+%\vspace{-7mm}
+%\bigskip
+
+This Appendix contains supplementary information for Chapter \ref{ch:rosettadeer}.
+
+\begin{table}[h!]
+\scriptsize
+\renewcommand{\tabcolsep}{0.09cm}
+\centering
+\caption[List of spin-labeled proteins in the Protein Databank.]{List of spin-labeled proteins in the Protein Databank.}
+\input{Tables/rosettadeer_main_slproteins.tex}
+\label{tab:rosettadeer_main_slproteins}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4in]{Figures/rosettadeer_supp_exou.pdf}
+ \caption[Data gathered in the ExoU C-terminus for this study.]{Data gathered in the ExoU C-terminus for this study.}
+\label{fig:rosettadeer_supp_exou}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.5in]{Figures/rosettadeer_supp_restraints.pdf}
+ \caption[Placement of experimental DEER restraints on protein structures used in this study.]{Placement of experimental DEER restraints on protein structures used in this study. Clockwise from top left: Bax (PDB: 1F16 model 8), CDB3 (PDB: 1HYN chains R/S), Rhodopsin (1GZM chain A), Mhp1 (PDB: 2JLN), and ExoU (PDB: 3TU3, C-terminus only).}
+\label{fig:rosettadeer_supp_restraints}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6in]{Figures/rosettadeer_supp_sl.pdf}
+ \caption[Nitroxide centers of mass fall along the $\mathrm{C_{\upbeta}}$-electron vector.]{Nitroxide centers of mass fall along the $\mathrm{C_{\upbeta}}$-electron vector. A) Depiction of spin label from PDB: 2Q9D showing the nitroxide center of mass (purple) and the nitroxide bond midpoint (green). B). Angle and relative distance of nitroxide center of mass along the $\mathrm{C_{\upbeta}}$-electron vector.}
+\label{fig:rosettadeer_supp_sl}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6in]{Figures/rosettadeer_supp_scheme.pdf}
+ \caption[Optimization of RosettaDEER measurement coordinates.]{Optimization of RosettaDEER measurement coordinates. Left: Each of the rotamers in Rosetta’s \gls{mtssl} rotamer library was converted into two coordinates: one representing the nitroxide ring center of mass (purple), which was used to evaluate clashes; and one representing the nitroxide bond midpoint (silver), from which distances were measured. Shown over PDB 2CUU residue 131. Right: Optimization scheme for reducing the number of measurement coordinates using experimental T4 Lysozyme distance data. One thousand replicates were performed for each of N clusters, with N ranging from 3 to 53 coordinates.}
+\label{fig:rosettadeer_supp_scheme}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.5in]{Figures/rosettadeer_supp_alltraces.pdf}
+ \caption[All simulated and experimental DEER decay data used in this study between experimentally resolved residues.]{All simulated and experimental DEER decay data used in this study between experimentally resolved residues. RosettaDEER could generally, but not always, simulate DEER traces from native-like models that are comparable to the experimental data.}
+\label{fig:rosettadeer_supp_alltraces}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=3in]{Figures/rosettadeer_supp_oscillations.pdf}
+ \caption[Deviation between experimental and simulated background decay ($k$) and modulation depths ($\lambda$).]{Deviation between experimental and simulated background decay ($k$) and modulation depths ($\lambda$).}
+\label{fig:rosettadeer_supp_oscillations}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.5in]{Figures/rosettadeer_supp_oscillation_decoys.pdf}
+ \caption[Enrichment of misfolded and misdocked decoys as a function of DEER decay trace duration.]{Enrichment of misfolded and misdocked decoys as a function of DEER decay trace duration. Enrichment was quantified as the logarithm of the percentage of native-like models (top 10\% by $\mathrm{RMSD_{100SSE}}$) that were also in the top 10\% by score. An enrichment of 1 indicates that the set of models constituting the top 10\% by RosettaDEER score was identical to the set of models constituting the top 10\% by Rosetta score.}
+\label{fig:rosettadeer_supp_oscillation_decoys}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5.5in]{Figures/rosettadeer_supp_top3.pdf}
+ \caption[Effect of DEER restraints on structure prediction of Bax and ExoU. ]{Effect of DEER restraints on structure prediction of Bax and ExoU. Top 3 best-scoring models of ExoU (top) and Bax (bottom) folded either with (left) or without (right) experimental \gls{deer} restraints. The native models are shown as cylinders for comparison.}
+\label{fig:rosettadeer_supp_top3}
+\end{figure}
+
+%\vspace{-7mm}
+\bigskip

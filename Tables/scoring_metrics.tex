@@ -1,0 +1,28 @@
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{center}
+\begin{tabular}{l c}
+\toprule \\
+\textbf{Method} & \textbf{Formula} \\
+\midrule \\
+Average distance only & $\left( \mu_{\mathup{sim}} - \mu_{\mathup{exp}} \right)^2$ \\
+Bounded range & $ max \left( 0.0, | \mu_{\mathup{sim}} - \mu_{\mathup{exp}} - \sigma | \right) $ \\
+Overlap & $ \sum_{\mathup{i}=1} | p_{\mathup{sim}} \left( r_{\mathup{i}} \right) - p_{\mathup{exp}} \left( r_{\mathup{i}} \right) | $  \\
+Wasserstein & $\sum_{\mathup{i}=1} |cdf_{\mathup{sim}} \left( r_{\mathup{i}} \right) - cdf_{\mathup{exp}} \left( r_{\mathup{i}} \right) | $ \\
+Discrepancy & $max \left( | p_{\mathup{sim}} \left( r \right) - p_{\mathup{exp}} \left( r \right) \right) $\\
+Kolmogorov-Smirnov & $max \left( | cdf_{\mathup{sim}} \left( r \right) - cdf_{\mathup{exp}} \left( r \right) \right)$ \\
+Chi-squared & $\sum_{\mathup{i}=1} \frac{ \left( p_{\mathup{sim}} \left( r_{\mathup{i}} \right) \right) - p_{\mathup{exp}} \left( r_{\mathup{i}} \right)^2 }{p_{\mathup{exp}} \left( r_{\mathup{i}} \right)} $ \\
+Reverse Chi-squared & $\sum_{\mathup{i}=1} \frac{ \left( p_{\mathup{exp}} \left( r_{\mathup{i}} \right) \right) - p_{\mathup{sim}} \left( r_{\mathup{i}} \right)^2 }{p_{\mathup{sim}} \left( r_{\mathup{i}} \right)} $ \\
+Cross entropy & $ - \sum_{\mathup{i}=1} p_{\mathup{exp}} \left( r_{\mathup{i}} \right) \ln \left( p_{\mathup{sim}} \left( r_{\mathup{i}} \right) \right) $ \\
+Jensen-Shannon distance & $ \sqrt{ \sum_{\mathup{i}=1} \left( \frac{ p_{\mathup{sim}} \left( r_{\mathup{i}} \right) } {2} \ln \left( \frac{ 2 * p_{\mathup{sim}} \left( r_{\mathup{i}} \right) } {p_{\mathup{sim}} \left( r_{\mathup{i}} \right) + p_{\mathup{exp}} \left( r_{\mathup{i}} \right)} \right) \right) + \frac{ p_{\mathup{exp}} \left( r_{\mathup{i}} \right) } {2} \ln \left( \frac{ 2 * p_{\mathup{exp}} \left( r_{\mathup{i}} \right) } {p_{\mathup{sim}} \left( r_{\mathup{i}} \right) + p_{\mathup{exp}} \left( r_{\mathup{i}} \right)} \right) } $ \\
+Bhattacharyya & $- \ln \left( \sum_{\mathup{i}=1} \sqrt{ p_{\mathup{sim}} \left( r_{\mathup{i}} \right) p_{\mathup{exp}} \left( r_{\mathup{i}} \right)}  \right)$ \\
+Hellinger & $1 - \sum_{\mathup{i}=1} \sqrt{ p_{\mathup{sim}} \left( r_{\mathup{i}} \right) p_{\mathup{exp}} \left( r_{\mathup{i}} \right)} $\\
+Jaccard index & $\sum_{\mathup{i}=1} \frac{ min \left( p_{\mathup{sim}} \left( r_{\mathup{i}} \right), p_{\mathup{exp}} \left( r_{\mathup{i}} \right) \right) } { max \left( p_{\mathup{sim}} \left( r_{\mathup{i}} \right), p_{\mathup{exp}} \left( r_{\mathup{i}} \right) \right)}$ \\
+Joint probability & $\sum_{\mathup{i}=1} p_{\mathup{sim}} \left( r_{\mathup{i}} \right) p_{\mathup{exp}} \left( r_{\mathup{i}} \right)$ \\
+\bottomrule \\
+\end{tabular} 
+\end{center}
+
+
+
