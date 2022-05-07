@@ -2,7 +2,7 @@
 
 I completed my PhD research at Vanderbilt University from 2015-2021 in the laboratories of Jens Meiler and Hassane S. Mchaourab. This repository contains the source code for the entire dissertation, which was written in TeX at [Overleaf](https://overleaf.com/). Everything was compiled with XeLaTeX. The templates files were designed by Eli Hooten, updated by Haley Adams, and made available by the University.
 
-The contents are in the process of being published in scientific journals (last updated 26 April 2022):
+The contents are in the process of being published in scientific journals (last updated 7 May 2022):
 
 * **Chapter 1: Alternating access in LeuT-fold transporters** (under review)
 * **Chapter 2: Analysis and modelling applications of DEER data** (currently in preparation as a review article)
