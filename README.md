@@ -4,7 +4,7 @@ I completed my PhD research at Vanderbilt University from 2015-2021 in the labor
 
 The contents are in the process of being published in scientific journals (last updated 7 May 2022):
 
-* **Chapter 1: Alternating access in LeuT-fold transporters** (accepted for publication)
+* **Chapter 1: Alternating access in LeuT-fold transporters** ([published in Journal of Molecular Biology](https://doi.org/10.1016/j.jmb.2022.167746))
 * **Chapter 2: Analysis and modelling applications of DEER data** (currently in preparation as a review article)
 * **Chapter 3: Rapid simulation of unprocessed DEER decay data for protein fold prediction** ([published in Biophysical Journal](https://doi.org/10.1016/j.bpj.2019.12.011))
 * **Chapter 4: Methodology for rigorous modeling of protein conformational changes by Rosetta using DEER distance restraints** ([published in Plos Computational Biology](https://doi.org/10.1371/journal.pcbi.1009107))
